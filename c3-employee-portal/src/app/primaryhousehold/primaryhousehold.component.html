@@ -1,0 +1,307 @@
+<app-header></app-header>
+
+<div class="inPageHeader">New Member Registration</div>
+
+<div id="mainForm">
+  <form>
+    <div class="row">
+      <div class="col">
+        <label for="caregiver.person.last_name">Caregiver Last Name *</label>
+        <input id="caregiver.person.last_name" name="caregiver.person.last_name" class="form-control" type="text" [(ngModel)]="caregiver.person.last_name" />
+      </div>
+      <div class="col">
+        <label for="caregiver.person.first_name">Caregiver First Name *</label>
+        <input id="caregiver.person.first_name" name="caregiver.person.first_name" class="form-control" type="text" [(ngModel)]="caregiver.person.first_name" />
+      </div>
+      <div class="col-2">
+        <label for="caregiver.person.date_of_birth">Caregiver DOB *</label>
+        <input id="caregiver.person.date_of_birth" name="caregiver.person.date_of_birth" class="form-control" type="text" [(ngModel)]="caregiver.person.date_of_birth" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="caregiver.address.address_line_1">Caregiver Address *</label>
+        <input id="caregiver.address.address_line_1" name="caregiver.address.address_line_1" class="form-control" type="text" [(ngModel)]="caregiver.address.address_line_1" />
+      </div>
+      <div class="col-3">
+        <label for="caregiver.address.city">City *</label>
+        <input id="caregiver.address.city" name="caregiver.address.city" class="form-control" type="text" [(ngModel)]="caregiver.address.city" />
+      </div>
+      <div class="col-2">
+        <label for="caregiver.address.state">State *</label>
+        <select id="caregiver.address.state" name="caregiver.address.state" class="form-control" [(ngModel)]="caregiver.address.state">
+          <option></option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+      </div>
+      <div class="col-2">
+        <label for="caregiver.address.zip">Zip Code *</label>
+        <input id="caregiver.address.zip" name="caregiver.address.zip" class="form-control" type="text" [(ngModel)]="caregiver.address.zip" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <label for="caregiver.address.phone">Phone Number *</label>
+        <input id="caregiver.address.phone" name="caregiver.address.phone" class="form-control" type="text" [(ngModel)]="caregiver.address.phone" />
+      </div>
+      <div class="col-2">
+        <label for="caregiver.person.gender">Gender</label>
+        <select id="caregiver.person.gender" name="caregiver.person.gender" class="form-control" [(ngModel)]="caregiver.person.gender">
+          <option></option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="caregiver.marital_status">Marital Status</label>
+        <select id="caregiver.marital_status" name="caregiver.marital_status" class="form-control" [(ngModel)]="caregiver.marital_status">
+          <option></option>
+          <option>Single</option>
+          <option>Married</option>
+          <option>Divorced</option>
+          <option>Separated</option>
+          <option>Widowed</option>
+          <option>Undisclosed</option>
+        </select>
+      </div>
+      <div class="col-2">
+        <label for="caregiver.person.primary_language">Primary Language</label>
+        <select id="caregiver.person.primary_language" name="caregiver.person.primary_language" class="form-control" [(ngModel)]="caregiver.person.primary_language">
+          <option></option>
+          <option>English</option>
+          <option>Spanish</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="caregiver.person.ethnicity_type">Caregiver Ethnicity</label>
+        <select id="caregiver.person.ethnicity_type" name="caregiver.person.ethnicity_type" class="form-control" [(ngModel)]="caregiver.person.ethnicity_type">
+          <option></option>
+          <option>White</option>
+          <option>Black</option>
+          <option>Hispanic</option>
+          <option>Asian</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="caregiver.person.self_identifies_as">Self-Identifies As</label>
+        <select id="caregiver.person.self_identifies_as" name="caregiver.person.self_identifies_as" class="form-control" [(ngModel)]="caregiver.person.self_identifies_as">
+          <option></option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="col-2">
+        <label for="caregiver.housing_type">Housing Type</label>
+        <select id="caregiver.housing_type" name="caregiver.housing_type" class="form-control" [(ngModel)]="caregiver.housing_type">
+          <option></option>
+          <option>Emergency Shelter/Mission/Transitional</option>
+          <option>Evacuee</option>
+          <option>Own Home</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-5">
+        <label for="caregiver.education_level">Highest Education Completed</label>
+        <select id="caregiver.education_level" name="caregiver.education_level" class="form-control" [(ngModel)]="caregiver.education_level">
+          <option></option>
+          <option>Grades 0-8</option>
+          <option>Grades 9-11</option>
+          <option>High School Diploma</option>
+          <option>GED</option>
+          <option>Post Secondary</option>
+          <option>Tradeschool</option>
+          <option>2 Year Degree</option>
+          <option>4 Year Degree</option>
+          <option>Masters Degree</option>
+          <option>PhD</option>
+          <option>Undisclosed</option>
+        </select>
+      </div>
+      <div class="col-5">
+        <label for="caregiver.employment_type">Employment Type</label>
+        <select id="caregiver.employment_type" name="caregiver.employment_type" class="form-control" [(ngModel)]="caregiver.employment_type">
+          <option></option>
+          <option>Post Secondary Student</option>
+          <option>Full-Time</option>
+          <option>Part-Time</option>
+          <option>Retired</option>
+          <option>None</option>
+          <option>Disclosed</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-5">
+        <label>Income Type</label>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" name="caregiver.incomeType.csfp" class="form-check-input"> CSFP
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" name="caregiver.incomeType.wic" class="form-check-input"> WIC
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" name="caregiver.incomeType.snap" class="form-check-input"> SNAP
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" name="caregiver.incomeType.tanf" class="form-check-input"> TANF
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" name="caregiver.incomeType.des" class="form-check-input"> DES Child Care Subsidy
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" name="caregiver.incomeType.qfs" class="form-check-input"> Quality First Scholar
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" name="caregiver.incomeType.other" class="form-check-input"> Other
+          </label>
+        </div>
+      </div>
+      <div class="col-5">
+        <label for="caregiver.income_amount">Monthly Income Amount ($)</label>
+        <input id="caregiver.income_amount" name="caregiver.income_amount" class="form-control" type="text" [(ngModel)]="caregiver.income_amount" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="caregiver.medicalInsuranceType">Medical Insurance Type</label>
+        <select id="caregiver.medicalInsuranceType" name="caregiver.medicalInsuranceType" class="form-control">
+          <option></option>
+          <option>Employer</option>
+          <option>Private</option>
+          <option>AHCCCS</option>
+          <option>Indian Health Services</option>
+          <option>Military</option>
+          <option>None</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="col">
+        <label>Do You Have Primary Doctor?</label>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" name="caregiver.medicalInsuranceType" value="yes" class="form-check-input" [(ngModel)]="caregiver.person.has_primary_care_provider"> Yes
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" name="caregiver.medicalInsuranceType" value="no" class="form-check-input" [(ngModel)]="caregiver.person.has_primary_care_provider"> No
+          </label>
+        </div>
+      </div>
+      <div class="col-2">
+        <label>Dental Insurance?</label>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" name="caregiver.dentalInsurance" value="yes" class="form-check-input"> Yes
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" name="caregiver.dentalInsurance" value="no" class="form-check-input"> No
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-5">
+        <label for="caregiver.child_care_type">Child Care Type</label>
+        <select id="caregiver.child_care_type" name="caregiver.child_care_type" class="form-control" [(ngModel)]="caregiver.child_care_type">
+          <option></option>
+          <option>Parent/Partner Care</option>
+          <option>Head Start</option>
+          <option>Child Care Center/Preschool Program</option>
+          <option>Family Child Care Home</option>
+          <option>Relative/Neighbor or Babysitter</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        * Indicates Required Field
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-green form-control" (click)="onSubmit()">SUBMIT</button>
+      </div>
+    </div>
+  </form>
+
+</div>
